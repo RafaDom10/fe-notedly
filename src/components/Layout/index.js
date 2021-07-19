@@ -1,5 +1,3 @@
-import PropTypes from 'prop-types';
-
 import { Wrapper, Main } from './styles';
 
 import Header from '../Header';
@@ -16,7 +14,3 @@ export default function Layout({ children }) {
     </>
   );
 }
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-};
