@@ -1,15 +1,18 @@
 import { BrowserRouter as Router } from 'react-router-dom';
-import Header from './components/Header';
-import Navigation from './components/Navigation';
+
 import Routes from './routes';
+import Layout from './components/Layout';
+
+import GlobalStyles from './assets/styles/global';
 
 export default function App() {
   return (
     <>
       <Router>
-        <Header />
-        <Navigation />
-        <Routes />
+        <GlobalStyles />
+        <Layout>
+          <Routes />
+        </Layout>
       </Router>
     </>
   );

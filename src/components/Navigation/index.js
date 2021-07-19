@@ -1,23 +1,31 @@
 import { Link } from 'react-router-dom';
 import { FaHome, FaBook, FaBookmark } from 'react-icons/fa';
 
+import { Nav, NavList } from './styles';
+
 export default function Navigation() {
   return (
-    <nav>
-      <ul>
+    <Nav>
+      <NavList>
         <li>
           <FaHome />
-          <Link to="/">Home</Link>
+          <div>
+            <Link to="/">Home</Link>
+          </div>
         </li>
         <li>
           <FaBook />
-          <Link to="/mynotes">My notes</Link>
+          <div>
+            <Link to="/mynotes">My notes</Link>
+          </div>
         </li>
         <li>
           <FaBookmark />
-          <Link to="/favorites">Favorites</Link>
+          <div>
+            <Link to="/favorites">Favorites</Link>
+          </div>
         </li>
-      </ul>
-    </nav>
+      </NavList>
+    </Nav>
   );
 }

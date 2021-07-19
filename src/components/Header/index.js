@@ -1,10 +1,12 @@
+import { HeaderBar, LogoText } from './styles';
+
 import logo from '../../assets/images/logo.svg';
 
 export default function Header() {
   return (
-    <header>
+    <HeaderBar>
       <img src={logo} alt="Notedly Logo" height="40" />
-      <h1>Notedly</h1>
-    </header>
+      <LogoText>Notedly</LogoText>
+    </HeaderBar>
   );
 }

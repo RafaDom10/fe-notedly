@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 
 export default function Favorites() {
   useEffect(() => {
-    document.title = 'Favorites - Notedly';
+    document.title = 'Favorites | Notedly';
   });
 
   return (
