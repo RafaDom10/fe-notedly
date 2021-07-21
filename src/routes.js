@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import MyNotes from './pages/MyNotes';
 import Favorites from './pages/Favorites';
 import NotePage from './pages/NotePage';
+import SignUp from './pages/SignUp';
 
 export default function Routes() {
   return (
@@ -12,6 +13,7 @@ export default function Routes() {
       <Route path="/mynotes" component={MyNotes} />
       <Route path="/favorites" component={Favorites} />
       <Route path="/note/:id" component={NotePage} />
+      <Route path="/signup" component={SignUp} />
     </Switch>
   );
 }
