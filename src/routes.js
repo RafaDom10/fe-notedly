@@ -7,6 +7,7 @@ import Favorites from './pages/Favorites';
 import NotePage from './pages/NotePage';
 import SignUp from './pages/SignUp';
 import SignIn from './pages/SignIn';
+import NewNote from './pages/NewNote';
 
 const IS_LOGGED_IN = gql`
   {
@@ -14,7 +15,7 @@ const IS_LOGGED_IN = gql`
   }
 `;
 
-const isLoggedIn = false;
+const isLoggedIn = true;
 
 export default function Routes() {
   return (
@@ -22,6 +23,7 @@ export default function Routes() {
       <Route exact path="/" component={Home} />
       <PrivateRoute path="/mynotes" component={MyNotes} />
       <PrivateRoute path="/favorites" component={Favorites} />
+      <PrivateRoute path="/new" component={NewNote} />
       <Route path="/note/:id" component={NotePage} />
       <Route path="/signup" component={SignUp} />
       <Route path="/signin" component={SignIn} />

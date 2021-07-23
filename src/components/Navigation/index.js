@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { FaHome, FaBook, FaBookmark } from 'react-icons/fa';
+import * as FaIcons from 'react-icons/fa';
 
 import { Nav, NavList } from './styles';
 
@@ -8,21 +8,27 @@ export default function Navigation() {
     <Nav>
       <NavList>
         <li>
-          <FaHome />
+          <FaIcons.FaHome />
           <div>
             <Link to="/">Home</Link>
           </div>
         </li>
         <li>
-          <FaBook />
+          <FaIcons.FaBook />
           <div>
             <Link to="/mynotes">My notes</Link>
           </div>
         </li>
         <li>
-          <FaBookmark />
+          <FaIcons.FaBookmark />
           <div>
             <Link to="/favorites">Favorites</Link>
+          </div>
+        </li>
+        <li>
+          <FaIcons.FaPlusSquare />
+          <div>
+            <Link to="/new">New Note</Link>
           </div>
         </li>
       </NavList>
