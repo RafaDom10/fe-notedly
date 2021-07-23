@@ -33,6 +33,8 @@
     "no-console": "off",
     "react/prop-types": "off",
     "react/destructuring-assignment": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "react/jsx-props-no-spreading": "off",
     "jsx-a11y/label-has-associated-control": [ "error", {
       "required": {
         "some": [ "nesting", "id"  ]

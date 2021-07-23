@@ -19,19 +19,4 @@ export const Form = styled.form`
     margin-bottom: 1em;
     padding-left: 8px;
   }
-
-  button {
-    width: 100%;
-    height: 40px;
-    margin-top: 1em;
-    cursor: pointer;
-    transition: 0.2s ease-in;
-    background: #F5F4F0;
-    border: none;
-
-    :hover {
-      background: #0077CC;
-      color: #FFF;
-    }
-  }
 `;

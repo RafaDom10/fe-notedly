@@ -33,7 +33,7 @@ export default function Home() {
     document.title = 'Home | Notedly';
   }, []);
 
-  const handleButtonOnclick = () => {
+  function handleButtonOnclick() {
     fetchMore({
       variables: {
         cursor: data.noteFeed.cursor,
@@ -50,7 +50,7 @@ export default function Home() {
         },
       }),
     });
-  };
+  }
 
   if (loading) return <p>Loading...</p>;
 

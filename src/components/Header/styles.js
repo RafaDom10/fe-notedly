@@ -17,3 +17,11 @@ export const LogoText = styled.h1`
   padding: 0;
   display: inline;
 `;
+
+export const UseState = styled.div`
+  margin-left: auto;
+
+  a {
+    text-decoration: none;
+  }
+`;
